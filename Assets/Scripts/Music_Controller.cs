@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -7,12 +8,17 @@ public class Music_Controller : MonoBehaviour
 {
     private void Start()
     {
-        DontDestroyOnLoad(gameObject);
-        Invoke("Load_After_Splash",3f);
+        int num_music_player = FindObjectsOfType<Music_Controller>().Length;
+        print(num_music_player);
+        if (num_music_player > 1)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+            
+        }
     }
 
-    private void Load_After_Splash()
-    {
-        SceneManager.LoadScene(1);
-    }
 }

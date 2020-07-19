@@ -15,7 +15,7 @@ public class Player_Controller : MonoBehaviour
     [Tooltip("In m")] [SerializeField] int Limit_for_Y_offset;
 
 
-    [Header("Rotaion Factor")]
+    [Header("Rotation Factor")]
     [SerializeField] float pitch_factor;
     [SerializeField] float yaw_factor;
     [SerializeField] float roll_factor;
@@ -31,6 +31,7 @@ public class Player_Controller : MonoBehaviour
             SceneManager.LoadScene(0);
         }
     }
+    
 
      void Horizontal_MOV()
     {
@@ -53,4 +54,5 @@ public class Player_Controller : MonoBehaviour
         float Roll =X_Throw * roll_factor;
         transform.localRotation = Quaternion.Euler(Pitch,Yaw,Roll);
     }
+   
 }
