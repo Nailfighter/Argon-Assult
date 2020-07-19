@@ -171,6 +171,10 @@ PrefabInstance:
       propertyPath: parent
       value: 
       objectReference: {fileID: 371264563}
+    - target: {fileID: 122165166, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
+      propertyPath: hits
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 1458391615630120, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
       propertyPath: m_Name
       value: AlienFighter (2)
@@ -353,7 +357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   circuitObject: {fileID: 518960789}
   circuit: {fileID: 518960789}
-  routeSpeed: 125
+  routeSpeed: 75
   lookAheadDistance: 100
   varyingSpeed: 0
   initialSpeed: 0
@@ -461,6 +465,10 @@ PrefabInstance:
       propertyPath: parent
       value: 
       objectReference: {fileID: 371264563}
+    - target: {fileID: 122165166, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
+      propertyPath: hits
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 1189170398, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
       propertyPath: parent
       value: 
@@ -693,6 +701,10 @@ PrefabInstance:
       propertyPath: parent
       value: 
       objectReference: {fileID: 371264563}
+    - target: {fileID: 122165166, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
+      propertyPath: hits
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 1458391615630120, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
       propertyPath: m_Name
       value: AlienFighter (8)
@@ -994,6 +1006,10 @@ PrefabInstance:
       propertyPath: parent
       value: 
       objectReference: {fileID: 371264563}
+    - target: {fileID: 122165166, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
+      propertyPath: hits
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 1189170398, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
       propertyPath: parent
       value: 
@@ -1053,6 +1069,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4154595508381948, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb,
     type: 3}
   m_PrefabInstance: {fileID: 760521054}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &801413481 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3084814538336094085, guid: 172401ef297ae7a42868b1e68bd2d005,
+    type: 3}
+  m_PrefabInstance: {fileID: 6196576117255953640}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &879515468
 GameObject:
@@ -1253,6 +1275,10 @@ PrefabInstance:
       propertyPath: parent
       value: 
       objectReference: {fileID: 371264563}
+    - target: {fileID: 122165166, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
+      propertyPath: hits
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 1345627305, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
       propertyPath: parent
       value: 
@@ -1418,6 +1444,10 @@ PrefabInstance:
       propertyPath: parent
       value: 
       objectReference: {fileID: 371264563}
+    - target: {fileID: 122165166, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
+      propertyPath: hits
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 1189170398, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
       propertyPath: parent
       value: 
@@ -1575,6 +1605,10 @@ PrefabInstance:
       propertyPath: parent
       value: 
       objectReference: {fileID: 371264563}
+    - target: {fileID: 122165166, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
+      propertyPath: hits
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 598488682, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
       propertyPath: parent
       value: 
@@ -1770,6 +1804,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1535897186}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1777635345 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6878186706452385360, guid: 172401ef297ae7a42868b1e68bd2d005,
+    type: 3}
+  m_PrefabInstance: {fileID: 6196576117255953640}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1825253065
 GameObject:
   m_ObjectHideFlags: 0
@@ -1811,6 +1851,10 @@ PrefabInstance:
       propertyPath: parent
       value: 
       objectReference: {fileID: 371264563}
+    - target: {fileID: 122165166, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
+      propertyPath: hits
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 1458391615630120, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
       propertyPath: m_Name
       value: AlienFighter (6)
@@ -1878,6 +1922,10 @@ PrefabInstance:
       propertyPath: parent
       value: 
       objectReference: {fileID: 371264563}
+    - target: {fileID: 122165166, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
+      propertyPath: hits
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 1189170398, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
       propertyPath: parent
       value: 
@@ -1996,7 +2044,7 @@ TerrainCollider:
   m_Material: {fileID: 0}
   m_Enabled: 1
   m_TerrainData: {fileID: 15600000, guid: 25b52168ff25a30428b04d8fad180529, type: 2}
-  m_EnableTreeColliders: 1
+  m_EnableTreeColliders: 0
 --- !u!218 &2048576455
 Terrain:
   m_ObjectHideFlags: 0
@@ -2055,6 +2103,10 @@ PrefabInstance:
       propertyPath: parent
       value: 
       objectReference: {fileID: 371264563}
+    - target: {fileID: 122165166, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
+      propertyPath: hits
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 1458391615630120, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
       propertyPath: m_Name
       value: AlienFighter (7)
@@ -2137,12 +2189,37 @@ PrefabInstance:
     - target: {fileID: 3084814538336094085, guid: 172401ef297ae7a42868b1e68bd2d005,
         type: 3}
       propertyPath: m_Name
-      value: Lase Left
+      value: LaserLeft
       objectReference: {fileID: 0}
+    - target: {fileID: 3084814538336094085, guid: 172401ef297ae7a42868b1e68bd2d005,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5936490164138087999, guid: 172401ef297ae7a42868b1e68bd2d005,
+        type: 3}
+      propertyPath: lazar.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5936490164138087999, guid: 172401ef297ae7a42868b1e68bd2d005,
+        type: 3}
+      propertyPath: lazar.Array.data[0]
+      value: 
+      objectReference: {fileID: 801413481}
+    - target: {fileID: 5936490164138087999, guid: 172401ef297ae7a42868b1e68bd2d005,
+        type: 3}
+      propertyPath: lazar.Array.data[1]
+      value: 
+      objectReference: {fileID: 1777635345}
     - target: {fileID: 6878186706452385360, guid: 172401ef297ae7a42868b1e68bd2d005,
         type: 3}
       propertyPath: m_Name
       value: Laser Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 6878186706452385360, guid: 172401ef297ae7a42868b1e68bd2d005,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6890889973401722292, guid: 172401ef297ae7a42868b1e68bd2d005,
         type: 3}
@@ -2217,6 +2294,10 @@ PrefabInstance:
       propertyPath: parent
       value: 
       objectReference: {fileID: 371264563}
+    - target: {fileID: 122165166, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
+      propertyPath: hits
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 1458391615630120, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
       propertyPath: m_Name
       value: AlienFighter

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -21,19 +22,19 @@ public class Player_Controller : MonoBehaviour
     [SerializeField] float roll_factor;
     [SerializeField] float Y_Throw_factor;
 
+    [Header("Laser")]
+    [SerializeField] GameObject[] lazar;
+
     void Update()
     {
         Horizontal_MOV();
         Vertical_MOV();
         Rotation();
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            SceneManager.LoadScene(0);
-        }
+        Lazar_Activation_Check();
     }
-    
 
-     void Horizontal_MOV()
+
+    void Horizontal_MOV()
     {
         X_Throw = CrossPlatformInputManager.GetAxis("Horizontal");
         float X_Offset = X_Throw * Speed * Time.deltaTime;
@@ -54,5 +55,23 @@ public class Player_Controller : MonoBehaviour
         float Roll =X_Throw * roll_factor;
         transform.localRotation = Quaternion.Euler(Pitch,Yaw,Roll);
     }
-   
+
+    private void Lazar_Activation_Check()
+    {
+        if (CrossPlatformInputManager.GetButton("Fire1"))
+        {
+            foreach (GameObject Laser in lazar)
+            {
+                Laser.SetActive(true);
+            }
+        }
+        else
+        {
+            foreach(GameObject Laser in lazar)
+            {
+                Laser.SetActive(false);
+            }
+        }
+    }
+
 }
