@@ -5,19 +5,19 @@ using UnityEngine.UI;
 
 public class Score_Board : MonoBehaviour
 {
-    int score=0;
+    public int score=0;
     public Text Text_UI;
     int Score_Per_Hit;
     private void Start()
     {
-        Text_UI.text = "Score-"+score.ToString();
+        Text_UI.text = score.ToString();
            
     }
     public void score_modifier()
     {
-        Score_Per_Hit = Random.Range(10, 50);
+        Score_Per_Hit = FindObjectOfType<Enemy_Behavior>().score_on_hit;
         score = score + Score_Per_Hit;
-        Text_UI.text = "Score-"+score.ToString();
+        Text_UI.text = score.ToString();
     }
 
 }

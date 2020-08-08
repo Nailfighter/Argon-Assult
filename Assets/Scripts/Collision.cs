@@ -15,14 +15,20 @@ public class Collision : MonoBehaviour
     {
         if(trigger_suc)
         {
-            if (FindObjectOfType<Life_Counter>().Life==0)
+            if (FindObjectOfType<Life_Counter>().Life<=0)
             {
                 GetComponent<Player_Controller>().enabled = false;
                 explosion.SetActive(true);
                 Invoke("Player_Death_Seq", wait_time);
             }
-            FindObjectOfType<Life_Counter>().life_counter();
-
+            if (Other.tag =="Missile")
+            {
+                FindObjectOfType<Life_Counter>().life_reduction_by_missile();
+            }
+            else
+            {
+                FindObjectOfType<Life_Counter>().life_counter();
+            }
         }
     }
     private void Player_Death_Seq()
@@ -34,6 +40,14 @@ public class Collision : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.C))
         {
             trigger_suc =! trigger_suc;
+        }
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            Time.timeScale = 2f;
+        }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Time.timeScale = 1f;
         }
     }
 }

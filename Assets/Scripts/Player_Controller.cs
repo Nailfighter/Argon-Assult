@@ -62,14 +62,16 @@ public class Player_Controller : MonoBehaviour
         {
             foreach (GameObject Laser in lazar)
             {
-                Laser.SetActive(true);
+                var emi = Laser.GetComponent<ParticleSystem>().emission;
+                emi.enabled = true;
             }
         }
         else
         {
-            foreach(GameObject Laser in lazar)
+            foreach (GameObject Laser in lazar)
             {
-                Laser.SetActive(false);
+                var emi = Laser.GetComponent<ParticleSystem>().emission;
+                emi.enabled = false;
             }
         }
     }
