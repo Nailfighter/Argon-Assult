@@ -12,15 +12,10 @@ public class Enemy_Behavior : MonoBehaviour
     [SerializeField] int health=10;
     public int score_on_hit;
     public int score_on_destruction;
+    [SerializeField] bool is_score_hit_on=true;
     private void Start()
     {
         Add_Box_Collision();
-        
- 
-    }
-    private void Awake()
-    {
-        print(gameObject.name + "-" + health);
     }
     private void OnParticleCollision(GameObject other)
     {
@@ -41,8 +36,12 @@ public class Enemy_Behavior : MonoBehaviour
 
     void hit_counter()
     {
-        FindObjectOfType<Score_Board>().score_modifier();
-        health=health-1;
+        if(is_score_hit_on)
+        {
+            FindObjectOfType<Score_Board>().score_modifier();
+            health = health - 1;
+        }
+
     }
     private void Add_Box_Collision()
     {

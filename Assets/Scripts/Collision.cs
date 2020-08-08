@@ -11,6 +11,15 @@ public class Collision : MonoBehaviour
     [SerializeField] float wait_time;
     [SerializeField] GameObject Life_text;
 
+    public void FixedUpdate()
+    {
+        if (FindObjectOfType<Life_Counter>().Life <= 0)
+        {
+            GetComponent<Player_Controller>().enabled = false;
+            explosion.SetActive(true);
+            Invoke("Player_Death_Seq", wait_time);
+        }
+    }
     public void OnTriggerEnter(Collider Other)
     {
         if(trigger_suc)

@@ -9,7 +9,6 @@ public class Music_Controller : MonoBehaviour
     private void Start()
     {
         int num_music_player = FindObjectsOfType<Music_Controller>().Length;
-        print(num_music_player);
         if (num_music_player > 1)
         {
             Destroy(gameObject);

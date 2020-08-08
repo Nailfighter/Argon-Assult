@@ -11,12 +11,10 @@ public class Life_Counter : MonoBehaviour
     public float Life = 20;
     [SerializeField] Text[] Life_X;
     int div = 20 / 5;
-    [SerializeField] Text visula;
 
     private void Update()
     {
         Life_Text_Changer();
-        visula.text = Life.ToString();
     }
 
     private void Life_Text_Changer()

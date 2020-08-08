@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 6328326702297179947}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -116,9 +116,9 @@ ParticleSystem:
     enabled: 1
     startLifetime:
       serializedVersion: 2
-      minMaxState: 0
-      scalar: 0.5
-      minScalar: 5
+      minMaxState: 3
+      scalar: 0.7
+      minScalar: 0.3
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -170,8 +170,8 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 100
-      minScalar: 50
+      scalar: 120
+      minScalar: 90
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -286,7 +286,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 5
+      scalar: 15
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -748,7 +748,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 2
+      value: 3
       mode: 0
       spread: 0
       speed:
@@ -1305,33 +1305,33 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.9716981, g: 0.9167325, b: 0.39112368, a: 0.5882353}
-        key1: {r: 1, g: 0.68994516, b: 0, a: 0.78431374}
-        key2: {r: 0.7830189, g: 0.34026816, b: 0.10834215, a: 1}
-        key3: {r: 0.9245283, g: 0.2959767, b: 0.058146335, a: 1}
-        key4: {r: 1, g: 0.27427217, b: 0, a: 1}
-        key5: {r: 0, g: 0, b: 0, a: 0}
+        key0: {r: 0.9716981, g: 0.9167325, b: 0.39112368, a: 1}
+        key1: {r: 1, g: 0.68994516, b: 0, a: 0.8627451}
+        key2: {r: 0.8301887, g: 0.8040821, b: 0.8040821, a: 1}
+        key3: {r: 1, g: 0.3659569, b: 0, a: 0.61960787}
+        key4: {r: 0.8773585, g: 0.17767541, b: 0.022071842, a: 0.6392157}
+        key5: {r: 0.8773585, g: 0.17767541, b: 0.022071842, a: 1}
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
-        ctime0: 9830
-        ctime1: 21781
-        ctime2: 36044
-        ctime3: 61873
+        ctime0: 7517
+        ctime1: 13685
+        ctime2: 21395
+        ctime3: 31226
         ctime4: 61873
-        ctime5: 0
+        ctime5: 61873
         ctime6: 0
         ctime7: 0
         atime0: 0
-        atime1: 55127
-        atime2: 65535
-        atime3: 65535
-        atime4: 65535
-        atime5: 0
+        atime1: 10794
+        atime2: 21588
+        atime3: 45296
+        atime4: 54741
+        atime5: 65535
         atime6: 0
         atime7: 0
         m_Mode: 0
-        m_NumColorKeys: 4
-        m_NumAlphaKeys: 3
+        m_NumColorKeys: 5
+        m_NumAlphaKeys: 6
       minGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -4826,7 +4826,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 973b1bccc53debb41822a6ec5ded70c1, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
