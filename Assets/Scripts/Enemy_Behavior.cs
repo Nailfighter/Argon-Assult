@@ -26,7 +26,7 @@ public class Enemy_Behavior : MonoBehaviour
         hit_counter();
     }
 
-    private void Kill_Enemy()
+    public void Kill_Enemy()
     {
         GameObject Enemy_Death = Instantiate(explosion_prefab, transform.position, Quaternion.identity);
         Enemy_Death.transform.parent = parent.transform;

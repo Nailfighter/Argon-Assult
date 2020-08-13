@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/HTP.unity
     guid: 51d09eb0e7ce52146b86622134e13834
   - enabled: 1
-    path: Assets/Scenes/Level 2.unity
+    path: Assets/Scenes/The Game.unity
     guid: 7eb8af86732f90a44ac73dac0d3e75c6
+  - enabled: 1
+    path: Assets/Scenes/Credit.unity
+    guid: 7e2cd1c1907f9514fa32c9f125ac017d
   m_configObjects: {}

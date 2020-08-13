@@ -1,15 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
+using UnityEngine.Timeline;
 using UnityStandardAssets.CrossPlatformInput;
 
 public class Collision : MonoBehaviour
 {
-    public bool trigger_suc = true;
     public GameObject explosion;
     [SerializeField] float wait_time;
     [SerializeField] GameObject Life_text;
+    [SerializeField] GameObject pause;
+    bool is_pause_on = false;
+    [SerializeField] PlayableDirector Main_Timeline;
+    [SerializeField] Game_Data _data;
 
     public void FixedUpdate()
     {
@@ -19,25 +24,23 @@ public class Collision : MonoBehaviour
             explosion.SetActive(true);
             Invoke("Player_Death_Seq", wait_time);
         }
+
     }
     public void OnTriggerEnter(Collider Other)
     {
-        if(trigger_suc)
+        if (FindObjectOfType<Life_Counter>().Life<=0)
         {
-            if (FindObjectOfType<Life_Counter>().Life<=0)
-            {
-                GetComponent<Player_Controller>().enabled = false;
-                explosion.SetActive(true);
-                Invoke("Player_Death_Seq", wait_time);
-            }
-            if (Other.tag =="Missile")
-            {
-                FindObjectOfType<Life_Counter>().life_reduction_by_missile();
-            }
-            else
-            {
-                FindObjectOfType<Life_Counter>().life_counter();
-            }
+            GetComponent<Player_Controller>().enabled = false;
+            explosion.SetActive(true);
+            Invoke("Player_Death_Seq", wait_time);
+        }
+        if (Other.tag =="Missile")
+        {
+            FindObjectOfType<Life_Counter>().life_reduction_by_missile();
+        }
+        else
+        {
+            FindObjectOfType<Life_Counter>().life_counter();
         }
     }
     private void Player_Death_Seq()
@@ -46,17 +49,25 @@ public class Collision : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            trigger_suc =! trigger_suc;
+            is_pause_on = !is_pause_on;
+            if (is_pause_on)
+            {
+                Time.timeScale = 0f;
+                pause.SetActive(true);
+                FindObjectOfType<Player_Controller>().enabled = false;
+            }
+            else
+            {
+                Time.timeScale = 1f;
+                pause.SetActive(false);
+                FindObjectOfType<Player_Controller>().enabled =true;
+            }
         }
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.R))
         {
-            Time.timeScale = 2f;
-        }
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            Time.timeScale = 1f;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }

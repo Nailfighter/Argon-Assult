@@ -64,6 +64,7 @@ public class Player_Controller : MonoBehaviour
             {
                 var emi = Laser.GetComponent<ParticleSystem>().emission;
                 emi.enabled = true;
+                Laser.GetComponent<AudioSource>().Play();
             }
         }
         else
@@ -72,6 +73,7 @@ public class Player_Controller : MonoBehaviour
             {
                 var emi = Laser.GetComponent<ParticleSystem>().emission;
                 emi.enabled = false;
+                Laser.GetComponent<AudioSource>().Stop();
             }
         }
     }

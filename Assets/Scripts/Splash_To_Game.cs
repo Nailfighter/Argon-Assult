@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEditor.SceneManagement;
 using UnityEngine.SceneManagement;
 
 public class Splash_To_Game : MonoBehaviour
