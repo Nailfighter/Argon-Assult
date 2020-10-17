@@ -11,6 +11,7 @@ public class UI_Behavior : MonoBehaviour
     [SerializeField] GameObject warning_text;
     [SerializeField] GameObject highscore;
     [SerializeField] Game_Data _Data;
+    
     public void Update()
     {
         if (SceneManager.GetActiveScene().buildIndex == 3)
@@ -34,4 +35,6 @@ public class UI_Behavior : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+    
+   
 }
